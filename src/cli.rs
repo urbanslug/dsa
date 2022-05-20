@@ -74,14 +74,6 @@ pub fn start() -> AppConfig {
                         .help("e (for elastic) or i (for inelastic)"),
                 )
                 .arg(
-                    Arg::new("output_format")
-                        .short('o')
-                        .long("output-format")
-                        .multiple_values(false)
-                        .default_value("m")
-                        .help("m (for msa) or g (for gfa)"),
-                )
-                .arg(
                     Arg::new("v")
                         .short('v')
                         .multiple_occurrences(true)
