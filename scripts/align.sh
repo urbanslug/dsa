@@ -44,7 +44,7 @@ do
     fi
 
     # GAF=ed.$change_type.$COUNT.gaf
-    $( dsa align -t d $EDS $SIMULATED_FA 2>/dev/null | cig > $DSA_OUT )
+    $( dsa align $EDS $SIMULATED_FA 2>/dev/null | cig > $DSA_OUT )
 
 
     # minigraph
