@@ -10,7 +10,7 @@ SIZE=100000
 # Path to EDS file from EDSRand
 EDS=x.eds
 
-# Path to Multiple Sequence Alignment from edsa convert
+# Path to Multiple Sequence Alignment from dsa convert
 MSA=x.msa
 
 VARIATION_GRAPH=x.vg
@@ -37,7 +37,7 @@ simed -d $d -s $s -l $l $SIZE > $EDS
 # Extract MSA from EDS
 # --------------------
 
-edsa convert -t d $EDS > $MSA
+dsa convert -t d $EDS > $MSA
 
 # Extract separate fasta files from MSA
 # -------------------------------------
