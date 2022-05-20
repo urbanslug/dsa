@@ -1,7 +1,7 @@
 [package]
 name = "dsa"
 description = "Degenerate String Aligner (dsa)"
-version = "0.0.1-alpha"
+version = "0.0.1"
 edition = "2021"
 authors = ["Njagi Mwaniki <njagi+bio@njagi.me>"]
 
@@ -18,15 +18,9 @@ ndarray = "^0.15.4"
 needletail = "0.4.1"
 indicatif = "0.16.2"
 
-# fbox = { path = "../fbox" }
 fbox = { git = "https://github.com/urbanslug/fbox.git" }
-
-# eds = { path = "../eds" }
-eds = { git = "ssh://git@github.com/urbanslug/eds.git" }
-
-# dwflambda = { path = "../dwlambda" }
-dwflambda = { git = "ssh://git@github.com/urbanslug/dwflambda.git" }
-
+eds = { git = "https://github.com/urbanslug/eds.git" }
+dwflambda = { git = "https://github.com/urbanslug/dwflambda.git" }
 ndarray-to-img = { git = "https://github.com/urbanslug/ndarray-to-img.git" }
 
 [dev-dependencies]
