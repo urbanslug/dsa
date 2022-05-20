@@ -57,7 +57,7 @@ pub fn start() -> AppConfig {
         )
         .subcommand(
             Command::new("convert")
-                .about("Convert an EDT into MSA (Fasta), GFA ..")
+                .about("Convert an EDT into MSA (Fasta)")
                 .short_flag('C')
                 .arg(
                     Arg::new("eds")
