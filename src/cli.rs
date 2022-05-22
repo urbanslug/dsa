@@ -123,16 +123,6 @@ pub fn start() -> AppConfig {
             _ => types::Format::Degenerate,
         };
 
-        let o: char = matches
-            .value_of("output_format")
-            .unwrap()
-            .parse::<char>()
-            .unwrap_or('m');
-
-        let convert_to = match o {
-            _ => types::Format::MSA,
-        };
-
         AppConfig {
             alignment_options: SubCommand::Convert,
             fasta: String::new(),
@@ -140,7 +130,7 @@ pub fn start() -> AppConfig {
             verbosity,
             k: 0,
             bind: true,
-            convert_to,
+            convert_to: types::Format::MSA,
             handle_as,
             bind_above: 0,
             bind_below: 0,
