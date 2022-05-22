@@ -37,7 +37,7 @@ simed -d $d -s $s -l $l $SIZE > $EDS
 # Extract MSA from EDS
 # --------------------
 
-edsa convert -t d $EDS > $MSA
+dsa convert -t i $EDS > $MSA
 
 # Extract separate fasta files from MSA
 # -------------------------------------
