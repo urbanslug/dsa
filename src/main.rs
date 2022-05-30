@@ -1,4 +1,3 @@
-#![allow(unused_imports)]
 //! # elastic degenerate string aligner (edsa)
 //!
 //! Exact and approximate String Matching to Elastic Degenerate Strings.
@@ -9,14 +8,7 @@ mod tests_prelude;
 mod types;
 
 use eds::{self, Sequence};
-use needletail::parse_fastx_file;
-use std::fs;
-use std::fs::File;
-use std::io::prelude::*;
-use std::io::BufReader;
 use std::time::Instant;
-
-use fbox::string;
 
 fn main() {
     let config: types::AppConfig = cli::start();

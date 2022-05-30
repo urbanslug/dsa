@@ -1,35 +1,3 @@
-// --------
-// Aliases
-// --------
-
-// --------
-// Structs
-// --------
-
-#[derive(Debug)]
-pub enum Operation {
-    I,
-    D,
-    M,
-    R,
-}
-
-impl Operation {
-    pub fn char_rep(&self) -> char {
-        match self {
-            Operation::I => 'I',
-            Operation::D => 'D',
-            Operation::M => 'M',
-            Operation::R => 'R',
-        }
-    }
-}
-
-pub struct Config {
-    pub penalties: Penalties,
-    pub verbosity: u8,
-}
-
 #[derive(Debug)]
 pub enum SubCommand {
     Convert,
@@ -41,7 +9,6 @@ pub enum SubCommand {
 pub enum Format {
     Degenerate,
     Elastic,
-    Fasta,
     MSA,
 }
 
@@ -61,9 +28,5 @@ pub struct AppConfig {
     pub convert_to: Format,
     pub handle_as: Format,
     pub edt: String,
-    pub k: usize,
     pub verbosity: u8,
-    pub bind: bool,
-    pub bind_above: usize,
-    pub bind_below: usize,
 }

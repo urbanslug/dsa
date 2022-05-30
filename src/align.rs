@@ -1,4 +1,4 @@
-use crate::types::{self as edsa_types, AppConfig, Format, Penalties, SubCommand};
+use crate::types::AppConfig;
 
 use dwflambda::align::wf_align;
 use dwflambda::{self, types};
