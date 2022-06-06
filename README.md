@@ -4,7 +4,7 @@
 ## Install
 Install cargo and rust.
 See the instructions here
-[Install Rust and Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+[Install Rust and Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html).
 
 
 Clone and install dsa
