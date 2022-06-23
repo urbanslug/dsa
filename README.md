@@ -50,3 +50,9 @@ Align one of the fasta files to the eds
 ```
 dsa align x.eds 0.fa > x.aln
 ```
+
+## Acknowledgement
+This work is part of a project that has received funding from the European Union’s
+Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie
+grant agreement No 956229. Co-financed by the Connecting Europe Facility of the
+European Union.
